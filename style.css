@@ -1,0 +1,78 @@
+
+
+#logIn {
+    margin:200px 500px 500px;
+  padding: 70px;
+    border:2px solid black;
+     border-spacing: 15px 50px;
+     font-family: 'Architects Daughter', cursive;
+
+}
+
+.userNameLogin {
+    margin-top: 30px;
+    border-spacing: 50px;
+}
+
+#labeluserLogin {
+    margin-top: 20px;
+    margin-left: -40px;
+}
+input{
+    width:300px;
+     height:48px;
+     margin-left: 10px;
+}
+
+#labelpassLogin {
+    margin-top: 20px;
+     margin-left: -40px;
+}
+.passwordLogin {
+    margin-top: 40px;
+}
+
+#loginbtn {
+    margin-left:100px;
+    margin-top: 30px;
+    width: 200px;
+    height: 48px;
+}
+
+#signUplink {
+    text-decoration: none;
+}
+
+#signUp {
+     margin:200px 500px 500px;
+  padding: 70px;
+    border:2px solid black;
+     border-spacing: 15px 50px;
+     font-family: 'Architects Daughter', cursive;
+}
+
+#labelEmailSignUp {
+     margin-top: 20px;
+     margin-left: -40px;
+}
+
+#labelPassSignUp{
+     margin-top: 20px;
+     margin-left: -40px;
+}
+
+
+#signUpbtn {
+     margin-left:100px;
+    margin-top: 30px;
+    width: 200px;
+    height: 48px;
+}
+
+.EmailPassSignUp {
+    margin-top: 40px;
+}
+
+#EmailSignUp{
+    margin-left: 30px;
+}
