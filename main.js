@@ -7,20 +7,43 @@ var newUser;
     var email = $("#EmailSignUp").val(); // get user email
    // console.log(email);
    var pass = $("#PassSignUp").val(); // get password
-   // console.log(pass);
-    var newUser = { // put the values in object
+
+   if(pass.length < 8) {
+    alert("The length of the password must be greater than 8")
+   }
+   else {
+     var newUser = { // put the values in object
                   "email": email,
-                "password": pass,
+                "password": pass
                 };
 
-      // console.log(newUser);  
+       console.log(newUser);
+       $("#signUp").attr('action','signIn.html');
+   }
+   // console.log(pass);
+     
 
-      window.open("signIn.html");        
+             
    
  }); 
 
  //In sign in form 
  // check the validation
+
+ $("#loginbtn").click(function(){
+  var emailLog = $("#userNameLogin").val();
+  // console.log(emailLog);
+  var passLog = $("#passwordLogin").val();
+  var user = {
+    "email" :  emailLog,
+    "password" : passLog
+  };
+
+  $.each(newUser,function(key,value){
+     
+
+  })
+ });
 
 
 
