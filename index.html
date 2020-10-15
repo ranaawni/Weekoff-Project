@@ -1,101 +1,47 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	  <meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="styleindex.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  	<link rel="stylesheet" type="text/css" href="styleindex.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-
-	<title>Memory Card</title>
+  <title>Test</title>
 </head>
 <body>
+  
+  
+  </body>
+</html>
+<div class="wrap">
+		<div class="container">
+			<div>
+				<h1 id="testName">JavaScript Test</h1>
+				<div id="bodytest" >
+				<p class="absolute-center" id="time">Time wasted: 0 seconds</p>
+				<p class="absolute-center" id="result"></p>
+				<p class="absolute-center" id="question"></p>
+				<button class="decor absolute-center" id="option1" onclick="check(1)"></button> 
+				<button class="decor absolute-center" id="option2" onclick="check(2)"></button> 
+				<button class="decor absolute-center" id="option3" onclick="check(3)"></button> 
+				<button class="decor absolute-center" id="option4" onclick="check(4)"></button> 
 
-<!--memory-game section s1-->
-<section class="memory-game" style="margin-left: 200px;">
+				<button class="decor absolute-center" id="start" onclick="check(0)">Pass The Test</button> 
 
-	<!--contain pictures of cards for front wich is hide and back which is word play-->
 
-	<div class="memory-card" data-framework="a">
-		<img id="i" class="front-face" src="images/1.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
+				<script>
+				             
+				                 var current_url = document.URL;
+				                  document.write("<p class='absolute-center'><a id='end' style='display: none;' class='decor' href='" + current_url + "'>Start over<\/a><\/p>"); 
+				             
+				</script>
+				<p></p>
+			</div>
+			</div>
 		</div>
+	</div>
+<script type="text/javascript" src="index.js"></script>
 
-		<div class="memory-card" data-framework="a">
-		<img id="i" class="front-face" src="images/1.jpg" alt="bear">
-		<img class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="b">
-		<img id="i" class="front-face" src="images/2.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="b">
-		<img id="i" class="front-face" src="images/2.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="c">
-		<img id="i" class="front-face" src="images/3.jpg" alt="bear">
-		<img class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="c">
-		<img id="i" class="front-face" src="images/3.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="d">
-		<img id="i" class="front-face" src="images/4.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="d">
-		<img id="i" class="front-face" src="images/4.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="e">
-		<img id="i" class="front-face" src="images/5.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="e">
-		<img id="i" class="front-face" src="images/5.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="f">
-		<img id="i" class="front-face" src="images/6.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="memory-card" data-framework="f">
-		<img id="i" class="front-face" src="images/6.jpg" alt="bear">
-		<img id="i" class="back-face" src="images/8.jpg" alt="play" />	
-		</div>
-
-		<div class="final">
-			<p>Good Job</p>
-		</div>
-		
-		
-	</section>
-	
-	<section id="logout" style="margin-top:900px; margin-right: 500px;">
-		<div class="field_label">Your Score</div>
-        <div class="field_value">
-          <div id="score">0</div>
-        </div>
-		<a id="alogout" style="text-decoration: none;" ><input id="logoutbtn" type='button' class='logout' value='Log Out'><a>
-
-	</section>
-	
-<script type="text/javascript" src="main.js"></script>
 </body>
 </html>

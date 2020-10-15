@@ -1,84 +1,83 @@
-*{
-	padding: 0;
+* {
 	margin: 0;
-	box-sizing: border-box;
-}
-
-body{
-	height: 100vh;
-	background:white;
-	display: flex;
-
-}
-
-.memory-game{
-	border: solid 2p black;
+	padding: 0;
+	background-color: #aed9e0;
+	color: #5e6472
 	
-	width: 750px;
-	height: 650px;
-	display: flex;
-	flex-wrap: wrap;
-	margin: auto;
-	perspective: 1000px;
 }
 
-.memory-card {
-
-width:33.3%;
-height: 33%;
-position: relative;
-transform: scale(1);
-transform-style: preserve-3d;
-transition: transform 0.5s;
-
+.wrap {
+	
+	margin : 200px 500px 500px 500px;
+	z-index: -1;
+	min-height: 100%;
+	padding-bottom: 20px;
 }
 
-.memory-card:active{
-transform: scale(.97);
-transition: transform 0.2s;
-}
-
-.memory-card.flip {
-	transform: rotateY(180deg);
-}
-img {
-	width: 200px;
-	height: 200px;
-
-}
-
-#i{
-
-	padding: 30px;
-}
-
-.front-face,
-.back-face {
-	width: 200px;
-	height: 200px;
-	padding: 30px;
-	margin-left: 50px;
-	position: absolute;
-	border: 2px solid deeppink;
-	border-radius: 5px;
-	backface-visibility: hidden;
-}
-
-.front-face{
-	transform: rotateY(180deg);
-}
-
-
-#first {
-	margin-left: -180px;
+#bodytest{
 	margin-top: 200px;
 }
 
-div#gameName{
-	margin-left: 580px;
-	margin-top: 100px;
-	font-family: 'Architects Daughter', cursive;
-	font-size: 22px;
-	font-weight: bold;
 
+.container p {
+	max-width: 200%;
+	padding: 15px 0 15px 0;
+	
+}
+
+
+
+
+.absolute-center {
+	width: 100%;
+	text-align: center;
+}
+
+
+#option1, #option2, #option3, #option4 {
+	display: none;
+	margin-bottom: 10px;
+}
+.decor {
+	text-decoration: none;
+	font-size: 20px;
+	margin-right: 20px;
+	color: #fff;
+	background: #0f4c5c;
+	padding: 4px 8px;
+	border: 0;
+	cursor: pointer;
+}
+
+
+h1 {
+	margin-top: -110px;
+	text-align: center;
+	font-style: italic;
+	
+}
+
+.block img {
+	max-width: 75%;
+	border: 10px solid #76aee9;
+}
+#time {
+	color: #5e6472;
+	font-size: 1.1em;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	border-bottom: 1px solid rgba(69, 54, 37, 0.2);
+}
+#result {
+  font-size: 1.2em;  
+}
+#question {
+  font-size: 1.5em;  
+}
+#stop {
+  color: #5e6472;
+  font-weight: bold;
+	font-size: 1.1em;
+	letter-spacing: 0.1em;
+	border-bottom: 1px solid rgba(69, 54, 37, 0.2);
 }
