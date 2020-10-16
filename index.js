@@ -70,3 +70,7 @@ function check(num) {
     }
   }
 }
+
+function log(){
+  window.location = "signIn.html"
+}
